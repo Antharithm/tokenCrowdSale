@@ -27,7 +27,7 @@ describe('Staking', () => {
 
       await tokenCoin.connect(owner).mint(
         crowdSale.address,
-        ethers.utils.parseEther('10000')
+        ethers.utils.parseEther('10000') // mint 10k TokenCoins
       )
 
       const ownerEtherBalanceOld = await owner.getBalance()
